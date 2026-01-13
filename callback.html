@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting to PrivaReceipt...</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; text-align: center; padding: 50px; }
+        h1 { color: #333; }
+        p { color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Redirecting to PrivaReceipt...</h1>
+    <p>If the app doesn't open, <a id="manual" href="#">click here</a>.</p>
+    <script>
+        var appUrl = "privareceipt://xero-callback" + window.location.search + window.location.hash;
+        document.getElementById("manual").href = appUrl;
+        window.location = appUrl;
+    </script>
+</body>
+</html>
